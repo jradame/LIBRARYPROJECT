@@ -3,6 +3,10 @@ import { books } from '../data';
 import Book from './ui/Book';
 
 const Discounted = () => {
+  const discountedBooks = books
+    .filter((book) => book.salePrice && book.salePrice < book.originalPrice)
+    .slice(0, 8);
+
   return (
     <section id="discounted">
       <div className="container">
@@ -11,11 +15,8 @@ const Discounted = () => {
             Books on <span className="purple">Discount</span>
           </h2>
           <div className="books">
-            {books
-              .filter(book => book.salePrice && book.salePrice < book.originalPrice)
-              .slice(0, 8)
-              .map((book) => (
-                <Book book={book} key={book.id} />
+            {discountedBooks.map((book) => (
+              <Book book={book} key={book.id} />
             ))}
           </div>
         </div>

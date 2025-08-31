@@ -828,3 +828,35 @@ select {
     padding-left: 0;
   }
 }
+
+/* ===========================
+   Rating Stars
+   =========================== */
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.rating__star {
+  color: #d1d5db; /* gray for empty */
+  font-size: 1rem;
+}
+
+.rating__star--filled {
+  color: #facc15; /* yellow for filled */
+  font-size: 1rem;
+}
+
+/* Star rating styles */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.rating__star {
+  font-size: 1rem;
+  color: #facc15; /* gold for filled stars */
+}
