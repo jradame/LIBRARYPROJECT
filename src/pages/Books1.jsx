@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Book from "../components/ui/Book";
-// ⚠️ You imported Rating but didn’t use it, so I removed it.
-// If you want ratings shown inside each Book card, keep it in Book.jsx instead.
+
 
 const Books = ({ books: initialBooks }) => {
   const [books, setBooks] = useState(initialBooks);
