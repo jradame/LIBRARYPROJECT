@@ -1,3 +1,5 @@
+> ⚠️ This repository is archived and no longer actively maintained. Kept for reference purposes.
+
 # LIBRARYPROJECT
 
 A responsive web application built with React that simulates an online bookstore. Users can browse books, view ratings, filter and sort by price or rating, and see which books are on sale. The project demonstrates how to build dynamic, component-driven interfaces with React while handling state management and rendering data-driven UI.
